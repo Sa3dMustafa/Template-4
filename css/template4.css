@@ -771,12 +771,16 @@ h2, h3, h4, h5, h6 {
   font-size: 14px;
   margin: 0;
 }
+.friends-content .box .info div{
+  display: flex;
+  gap: 5px;
+}
 
 .friends-content .box .info a {
   width: fit-content;
   font-size: 14px;
   width: fit-content;
-  padding: 6px;
+  padding: 5px;
   border-radius: 6px;
   color: white;
   background-color: var(--blue-color);
@@ -785,7 +789,14 @@ h2, h3, h4, h5, h6 {
 .friends-content .box .info a:nth-child(2) {
   background-color: var(--red-color)
 }
-
+@media only screen and (max-width: 768px) {
+  .friends-content .box .info p{
+    font-size: 12px;
+  }
+  .friends-content .box .info a {
+    padding: 3px;
+  }
+}
 /* ==================== end Friends page ===============*/
 /* ==================== start courses page ============= */
 .content .container .courses-content {
